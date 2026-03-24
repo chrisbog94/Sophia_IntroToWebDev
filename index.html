@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom Valley Nursery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="bvn-header">
+    <div class="container">
+      <div class="d-flex align-items-center gap-3 py-2">
+        <img src="images/logo.png" alt="Bloom Valley Nursery Logo" class="bvn-logo">
+        <h1 class="bvn-site-title mb-0">Bloom Valley Nursery</h1>
+      </div>
+      <nav>
+        <ul class="nav bvn-nav">
+          <li class="nav-item"><a class="nav-link bvn-nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link bvn-nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link bvn-nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link bvn-nav-link" href="community.html">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container my-4">
+
+    <!-- Client Highlights -->
+    <section class="bvn-highlights rounded p-4 mb-4">
+      <h2>Welcome to Bloom Valley Nursery</h2>
+      <p>Your local, family-owned plant nursery specializing in plants, trees, and gardening supplies. We connect gardening enthusiasts and homeowners with high-quality products rooted in sustainability and creativity.</p>
+    </section>
+
+    <!-- Shopping Promos -->
+    <section class="mb-4">
+      <h2>Current Promotions</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card bvn-promo-card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Spring Sale</h3>
+              <p class="card-text">20% off all trees this weekend only!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bvn-promo-card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Buy 2 Get 1 Free</h3>
+              <p class="card-text">On all indoor houseplants.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bvn-promo-card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Free Potting Soil</h3>
+              <p class="card-text">With any plant purchase over $30.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="mb-4">
+      <h2>Featured Products</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="images/birch_tree.png" class="card-img-top bvn-card-img" alt="Birch tree">
+            <div class="card-body"><p class="card-text fw-bold">Birch Tree</p></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="images/aloe_vera_plant.png" class="card-img-top bvn-card-img" alt="Aloe vera plant">
+            <div class="card-body"><p class="card-text fw-bold">Aloe Vera</p></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <img src="images/watering_can.png" class="card-img-top bvn-card-img" alt="Watering can">
+            <div class="card-body"><p class="card-text fw-bold">Watering Can</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopping Perks -->
+    <section class="bvn-perks rounded p-4 mb-4">
+      <h2>Why Shop With Us?</h2>
+      <ul class="mb-0">
+        <li>Family-owned and community-focused</li>
+        <li>Sustainably sourced plants and supplies</li>
+        <li>Expert gardening advice on every visit</li>
+        <li>Custom orders available for special requests</li>
+        <li>Convenient online browsing and in-store pickup</li>
+      </ul>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="mb-4">
+      <h2>Shop by Category</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card bvn-category-card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Trees</h3>
+              <p class="card-text">Apple, Birch, Maple and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bvn-category-card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Houseplants</h3>
+              <p class="card-text">Aloe vera, Spider plant, String of pearls.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bvn-category-card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Accessories</h3>
+              <p class="card-text">Birdhouses, potting soil, watering cans.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bvn-footer">
+    <div class="container">
+      <div class="row g-4 pb-3">
+        <div class="col-md-4">
+          <h4 class="bvn-footer-heading">Subscribe to Our Newsletter</h4>
+          <input type="email" class="form-control form-control-sm mb-2" placeholder="Enter your email">
+          <button id="subscribe-btn" class="btn btn-sm bvn-btn-accent">Subscribe</button>
+        </div>
+        <div class="col-md-4">
+          <h4 class="bvn-footer-heading">Follow Us</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="bvn-footer-link">Facebook</a></li>
+            <li><a href="#" class="bvn-footer-link">Instagram</a></li>
+            <li><a href="#" class="bvn-footer-link">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="bvn-footer-heading">Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="bvn-footer-link">Home</a></li>
+            <li><a href="gallery.html" class="bvn-footer-link">Gallery</a></li>
+            <li><a href="about.html" class="bvn-footer-link">About Us</a></li>
+            <li><a href="community.html" class="bvn-footer-link">Community</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center bvn-footer-copy mb-0">&copy; 2026 Bloom Valley Nursery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

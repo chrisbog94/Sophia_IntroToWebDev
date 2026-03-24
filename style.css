@@ -1,0 +1,222 @@
+/* =============================================================
+   Bloom Valley Nursery — Custom Styles (Bootstrap overrides)
+   Task 2.2
+
+   Palette (Option 2):
+     --canopy-green:  #014038
+     --meadow-mist:   #96BAA0
+     --sky-bloom:     #BDD4DA
+     --sunlit-petal:  #F0C06D
+     --cloudy-gray:   #F7F7F7
+   Font Color (Detritus Green): #00231C
+   Typography (Option 2):
+     Titles/Captions — Arial
+     Subtitles       — Comfortaa (Google Fonts)
+     Body            — Calibri, Arial fallback
+============================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap');
+
+:root {
+    --canopy-green: #014038;
+    --meadow-mist: #96BAA0;
+    --sky-bloom: #BDD4DA;
+    --sunlit-petal: #F0C06D;
+    --cloudy-gray: #F7F7F7;
+    --font-color: #00231C;
+}
+
+/* ---- Base ---- */
+body {
+    font-family: Calibri, Arial, sans-serif;
+    color: var(--font-color);
+    background-color: var(--cloudy-gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+main {
+    flex: 1;
+}
+
+/* Title Large — Arial 30px Bold */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Title — Arial 25px Bold */
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Subtitle — Comfortaa 15px Normal */
+h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* Body Strong — Calibri 16px Bold */
+h4 {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Captions — Arial 11px Bold */
+figcaption {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* ---- Header ---- */
+.bvn-header {
+    background-color: var(--canopy-green);
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+
+.bvn-logo {
+    height: 60px;
+    width: auto;
+}
+
+.bvn-site-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bvn-nav {
+    gap: 0.5rem;
+}
+
+.bvn-nav-link {
+    color: var(--sunlit-petal) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.bvn-nav-link:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+/* ---- Footer ---- */
+.bvn-footer {
+    background-color: var(--canopy-green);
+    color: #fff;
+    padding: 2rem 0 1rem;
+    margin-top: auto;
+}
+
+.bvn-footer-heading {
+    color: var(--sunlit-petal);
+    font-size: 16px;
+}
+
+.bvn-footer-link {
+    color: var(--meadow-mist);
+    text-decoration: none;
+}
+
+.bvn-footer-link:hover {
+    color: #fff;
+}
+
+.bvn-footer-copy {
+    color: var(--meadow-mist);
+    font-size: 11px;
+}
+
+/* ---- Buttons ---- */
+.bvn-btn-primary {
+    background-color: var(--canopy-green);
+    color: #fff;
+    border: none;
+    font-family: Arial, sans-serif;
+}
+
+.bvn-btn-primary:hover {
+    background-color: var(--meadow-mist);
+    color: var(--font-color);
+}
+
+.bvn-btn-accent {
+    background-color: var(--sunlit-petal);
+    color: var(--font-color);
+    border: none;
+    font-family: Arial, sans-serif;
+}
+
+.bvn-btn-accent:hover {
+    background-color: var(--meadow-mist);
+}
+
+/* ---- Tables ---- */
+.bvn-table-head th {
+    background-color: var(--canopy-green);
+    color: #fff;
+}
+
+.bvn-table tbody tr:nth-child(even) {
+    background-color: var(--sky-bloom);
+}
+
+/* ---- Homepage ---- */
+.bvn-highlights {
+    background-color: var(--sky-bloom);
+}
+
+.bvn-promo-card {
+    background-color: var(--sunlit-petal);
+    border: none;
+}
+
+.bvn-category-card {
+    border: 2px solid var(--meadow-mist);
+}
+
+.bvn-perks {
+    background-color: var(--meadow-mist);
+}
+
+.bvn-card-img {
+    height: 160px;
+    object-fit: cover;
+}
+
+/* ---- Gallery ---- */
+.bvn-product-img {
+    width: 100%;
+    max-width: 180px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.bvn-product-table td {
+    vertical-align: top;
+}
+
+.bvn-modal-header {
+    background-color: var(--canopy-green);
+    color: #fff;
+}
+
+/* ---- Community ---- */
+.bvn-testimonial-card {
+    background-color: var(--sky-bloom);
+    border-left: 4px solid var(--canopy-green);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
