@@ -34,7 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // ── Subscribe buttons (all pages) ──────────────────────────────────────────
     document.querySelectorAll('#subscribe-btn').forEach(function (btn) {
         btn.addEventListener('click', function () {
+            var input = btn.previousElementSibling;
+            if (!input.value || !input.checkValidity()) {
+                input.reportValidity();
+                return;
+            }
             alert('Thank you for subscribing.');
+            input.value = '';
         });
     });
 
@@ -70,6 +76,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var processOrderBtn = document.getElementById('process-order-btn');
     if (processOrderBtn) {
         processOrderBtn.addEventListener('click', function () {
+            if (getCart().length === 0) {
+                alert('Your cart is empty. Please add items before processing an order.');
+                return;
+            }
             saveCart([]);
             renderCart();
             alert('Thank you for your order.');
